@@ -14,7 +14,7 @@ echo "Making migrations..."
 python3.12 manage.py makemigrations --noinput
 python3.12 manage.py migrate --noinput
 #Install whitenoise
-echo Installing white noise..."
+echo "Installing white noise..."
 python3.12 manage.py whitenoise
 # Collect staticfiles
 echo "Collect static..."
