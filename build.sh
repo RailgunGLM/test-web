@@ -19,5 +19,3 @@ python3.12 manage.py whitenoise
 # Collect staticfiles
 echo "Collect static..."
 python3.12 manage.py collectstatic --noinput --clear
-
-wsgi config :
