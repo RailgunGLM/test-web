@@ -20,6 +20,4 @@ python3.12 manage.py whitenoise
 echo "Collect static..."
 python3.12 manage.py collectstatic --noinput --clear
 
-echo "Build process completed!"```
-
 wsgi config :
