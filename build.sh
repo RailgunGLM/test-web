@@ -6,6 +6,7 @@ python3.12 pip install -U pip
 
 echo "Installing project dependencies..."
 python3.12 -m pip install -r requirements.txt
+python3.12 -m pip install -r pkgconfig
 
 # Make migrations
 echo "Making migrations..."
