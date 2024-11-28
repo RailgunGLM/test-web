@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-o6xv=s2dwxy*q$=bbij*jzc!!45#+m3rrptw8p-3l9dxaw49r*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 
 # Application definition
@@ -75,12 +75,16 @@ WSGI_APPLICATION = 'webproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'stats',
+        'USER': 'admin',
+        'PASSWORD': 'railgunglm-database',
+        'HOST': 'railgunglm-database.c5kqkuqg49fj.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
+    }
+}
 
 
 # Password validation
