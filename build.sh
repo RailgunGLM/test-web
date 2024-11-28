@@ -7,6 +7,10 @@ python3.12 pip install -U pip
 echo "Installing project dependencies..."
 python3.12 -m pip install -r requirements.txt
 python3.12 -m pip install -r pkgconfig
+python3.12 -m pip install -r mysqlclient
+python3.12 -m pip install -r mariadb
+python3.12 -m pip install -r libmariadb
+python3.12 -m pip install -r perconaserverclient
 
 # Make migrations
 echo "Making migrations..."
