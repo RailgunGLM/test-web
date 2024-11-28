@@ -1,21 +1,3 @@
-#!/bin/bash
-
-# Update pip
-echo "Updating pip..."
-python3.9 pip install -U pip
-
-# Install dependencies
-
-echo "Installing project dependencies..."
-python3.9 -m pip install -r requirements.txt
-
-# Make migrations
-echo "Making migrations..."
-python3.9 manage.py makemigrations --noinput
-python3.9 manage.py migrate --noinput
-#Install whitenoise
-echo "Installing white noise..."
-python3.9 manage.py whitenoise
-# Collect staticfiles
-echo "Collect static..."
-python3.9 manage.py collectstatic --noinput --clear
+# build_files.sh
+pip install -r requirements.txt
+python3.x manage.py collectstatic --no-input --clear
